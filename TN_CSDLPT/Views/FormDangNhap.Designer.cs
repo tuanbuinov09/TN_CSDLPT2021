@@ -36,10 +36,10 @@ namespace TN_CSDLPT
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonDangNhap = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.buttonThoat = new System.Windows.Forms.Button();
-            this.radioButtonSinhVien = new System.Windows.Forms.RadioButton();
             this.radioButtonGiaoVien = new System.Windows.Forms.RadioButton();
+            this.radioButtonSinhVien = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBoxCoSo
@@ -72,9 +72,9 @@ namespace TN_CSDLPT
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Co So";
+            this.label1.Text = "Cơ sở";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -82,9 +82,9 @@ namespace TN_CSDLPT
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(23, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Ten Dang Nhap";
+            this.label2.Text = "Tên đăng nhập";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -92,9 +92,9 @@ namespace TN_CSDLPT
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(23, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Mat Khau";
+            this.label3.Text = "Mật khẩu";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // buttonDangNhap
@@ -103,19 +103,9 @@ namespace TN_CSDLPT
             this.buttonDangNhap.Name = "buttonDangNhap";
             this.buttonDangNhap.Size = new System.Drawing.Size(174, 23);
             this.buttonDangNhap.TabIndex = 6;
-            this.buttonDangNhap.Text = "Dang Nhap";
+            this.buttonDangNhap.Text = "Đăng nhập";
             this.buttonDangNhap.UseVisualStyleBackColor = true;
             this.buttonDangNhap.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(115, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Dang Nhap";
             // 
             // buttonThoat
             // 
@@ -123,18 +113,9 @@ namespace TN_CSDLPT
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(75, 23);
             this.buttonThoat.TabIndex = 8;
-            this.buttonThoat.Text = "Thoat";
+            this.buttonThoat.Text = "Thoát";
             this.buttonThoat.UseVisualStyleBackColor = true;
             this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
-            // 
-            // radioButtonSinhVien
-            // 
-            this.radioButtonSinhVien.Location = new System.Drawing.Point(226, 81);
-            this.radioButtonSinhVien.Name = "radioButtonSinhVien";
-            this.radioButtonSinhVien.Size = new System.Drawing.Size(85, 17);
-            this.radioButtonSinhVien.TabIndex = 10;
-            this.radioButtonSinhVien.Text = "Sinh Vien";
-            this.radioButtonSinhVien.UseVisualStyleBackColor = true;
             // 
             // radioButtonGiaoVien
             // 
@@ -142,11 +123,31 @@ namespace TN_CSDLPT
             this.radioButtonGiaoVien.Checked = true;
             this.radioButtonGiaoVien.Location = new System.Drawing.Point(135, 81);
             this.radioButtonGiaoVien.Name = "radioButtonGiaoVien";
-            this.radioButtonGiaoVien.Size = new System.Drawing.Size(71, 17);
+            this.radioButtonGiaoVien.Size = new System.Drawing.Size(70, 17);
             this.radioButtonGiaoVien.TabIndex = 11;
             this.radioButtonGiaoVien.TabStop = true;
-            this.radioButtonGiaoVien.Text = "Giao Vien";
+            this.radioButtonGiaoVien.Text = "Giáo viên";
             this.radioButtonGiaoVien.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSinhVien
+            // 
+            this.radioButtonSinhVien.Location = new System.Drawing.Point(226, 81);
+            this.radioButtonSinhVien.Name = "radioButtonSinhVien";
+            this.radioButtonSinhVien.Size = new System.Drawing.Size(85, 17);
+            this.radioButtonSinhVien.TabIndex = 10;
+            this.radioButtonSinhVien.Text = "Sinh viên";
+            this.radioButtonSinhVien.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(115, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Đăng nhập";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // FormDangNhap
             // 
@@ -181,9 +182,9 @@ namespace TN_CSDLPT
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonDangNhap;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonThoat;
-        private System.Windows.Forms.RadioButton radioButtonSinhVien;
         private System.Windows.Forms.RadioButton radioButtonGiaoVien;
+        private System.Windows.Forms.RadioButton radioButtonSinhVien;
+        private System.Windows.Forms.Label label4;
     }
 }
