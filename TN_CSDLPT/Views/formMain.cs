@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using TN_CSDLPT.Views;
 
 namespace TN_CSDLPT
 {
@@ -50,6 +51,18 @@ namespace TN_CSDLPT
         private void skinRibbonGalleryBarItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
+        }
+
+        private void btnGiaoVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FromGiangVien));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FromGiangVien f = new FromGiangVien();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
     }
 }
