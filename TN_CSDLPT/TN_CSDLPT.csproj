@@ -81,12 +81,6 @@
     <Compile Include="Views\FormMonHoc.Designer.cs">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmSinhVienMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmSinhVienMain.designer.cs">
-      <DependentUpon>frmSinhVienMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FromGiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +105,6 @@
     </Compile>
     <EmbeddedResource Include="Views\FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmSinhVienMain.resx">
-      <DependentUpon>frmSinhVienMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FromGiangVien.resx">
       <DependentUpon>FromGiangVien.cs</DependentUpon>

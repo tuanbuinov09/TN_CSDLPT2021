@@ -15,7 +15,7 @@ namespace TN_CSDLPT
         /// The main entry point for the application.
         /// </summary>
         public static SqlConnection conn = new SqlConnection();
-        public static String connstr="";
+        public static String connstr= "";
         public static String connstr_publisher = "Data Source=DESKTOP-APT25E3;Initial Catalog=TN_CSDLPT;Integrated Security=True";
         
         public static SqlDataReader myReader;
