@@ -37,6 +37,8 @@ namespace TN_CSDLPT
         public static BindingSource bds_DanhSachPhanManh = new BindingSource();
         public static FormMain formChinh;
 
+        
+
         public static int KetNoi()
         {
             if (Program.conn != null && Program.conn.State == ConnectionState.Open)

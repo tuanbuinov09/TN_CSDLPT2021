@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Views\frmSinhVienMain.resx">
       <DependentUpon>frmSinhVienMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FromGiangVien.resx">
+      <DependentUpon>FromGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="DS.xsc">
       <DependentUpon>DS.xsd</DependentUpon>
