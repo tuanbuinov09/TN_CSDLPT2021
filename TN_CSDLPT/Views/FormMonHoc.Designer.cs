@@ -48,7 +48,7 @@ namespace TN_CSDLPT.Views
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dS = new TN_CSDLPT.DS();
+            this.DS = new TN_CSDLPT.DS();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMAMH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTENMH = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -64,7 +64,7 @@ namespace TN_CSDLPT.Views
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -208,12 +208,12 @@ namespace TN_CSDLPT.Views
             // mONHOCBindingSource
             // 
             this.mONHOCBindingSource.DataMember = "MONHOC";
-            this.mONHOCBindingSource.DataSource = this.dS;
+            this.mONHOCBindingSource.DataSource = this.DS;
             // 
-            // dS
+            // DS
             // 
-            this.dS.DataSetName = "DS";
-            this.dS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.DS.DataSetName = "DS";
+            this.DS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
@@ -287,8 +287,13 @@ namespace TN_CSDLPT.Views
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.BANGDIEMTableAdapter = null;
             this.tableAdapterManager.BODETableAdapter = null;
+            this.tableAdapterManager.COSOTableAdapter = null;
             this.tableAdapterManager.GIAOVIEN_DANGKYTableAdapter = null;
+            this.tableAdapterManager.GIAOVIENTableAdapter = null;
+            this.tableAdapterManager.KHOATableAdapter = null;
+            this.tableAdapterManager.LOPTableAdapter = null;
             this.tableAdapterManager.MONHOCTableAdapter = this.mONHOCTableAdapter;
+            this.tableAdapterManager.SINHVIENTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = TN_CSDLPT.DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // FormMonHoc
@@ -307,7 +312,7 @@ namespace TN_CSDLPT.Views
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -344,7 +349,7 @@ namespace TN_CSDLPT.Views
         private DevExpress.XtraBars.BarDockControl barDockControl4;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private DS dS;
+        private DS DS;
         private System.Windows.Forms.BindingSource mONHOCBindingSource;
         private DSTableAdapters.MONHOCTableAdapter mONHOCTableAdapter;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
