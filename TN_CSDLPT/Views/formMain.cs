@@ -64,5 +64,17 @@ namespace TN_CSDLPT
                 f.Show();
             }
         }
+
+        private void btnMonHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormMonHoc));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormMonHoc f = new FormMonHoc();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
 }
