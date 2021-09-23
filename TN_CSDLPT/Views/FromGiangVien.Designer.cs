@@ -30,12 +30,12 @@ namespace TN_CSDLPT.Views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FromGiangVien));
             System.Windows.Forms.Label mAGVLabel;
             System.Windows.Forms.Label hOLabel;
             System.Windows.Forms.Label tENLabel;
             System.Windows.Forms.Label dIACHILabel;
             System.Windows.Forms.Label mAKHLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FromGiangVien));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
@@ -65,17 +65,17 @@ namespace TN_CSDLPT.Views
             this.colDIACHI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMAKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
+            this.txtHo = new System.Windows.Forms.TextBox();
+            this.txtMaGV = new System.Windows.Forms.TextBox();
             this.bdsGiaoVien_DangKy = new System.Windows.Forms.BindingSource(this.components);
             this.gIAOVIEN_DANGKYTableAdapter = new TN_CSDLPT.DSTableAdapters.GIAOVIEN_DANGKYTableAdapter();
             this.bdsBoDe = new System.Windows.Forms.BindingSource(this.components);
             this.bODETableAdapter = new TN_CSDLPT.DSTableAdapters.BODETableAdapter();
             this.giaovienTableAdapter = new TN_CSDLPT.DSTableAdapters.GIAOVIENTableAdapter();
             this.tableAdapterManager = new TN_CSDLPT.DSTableAdapters.TableAdapterManager();
-            this.txtMaGV = new System.Windows.Forms.TextBox();
-            this.txtHo = new System.Windows.Forms.TextBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
             mAGVLabel = new System.Windows.Forms.Label();
             hOLabel = new System.Windows.Forms.Label();
             tENLabel = new System.Windows.Forms.Label();
@@ -92,6 +92,51 @@ namespace TN_CSDLPT.Views
             ((System.ComponentModel.ISupportInitialize)(this.bdsGiaoVien_DangKy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBoDe)).BeginInit();
             this.SuspendLayout();
+            // 
+            // mAGVLabel
+            // 
+            mAGVLabel.AutoSize = true;
+            mAGVLabel.Location = new System.Drawing.Point(66, 37);
+            mAGVLabel.Name = "mAGVLabel";
+            mAGVLabel.Size = new System.Drawing.Size(41, 13);
+            mAGVLabel.TabIndex = 0;
+            mAGVLabel.Text = "MAGV:";
+            // 
+            // hOLabel
+            // 
+            hOLabel.AutoSize = true;
+            hOLabel.Location = new System.Drawing.Point(81, 84);
+            hOLabel.Name = "hOLabel";
+            hOLabel.Size = new System.Drawing.Size(26, 13);
+            hOLabel.TabIndex = 2;
+            hOLabel.Text = "HO:";
+            // 
+            // tENLabel
+            // 
+            tENLabel.AutoSize = true;
+            tENLabel.Location = new System.Drawing.Point(327, 84);
+            tENLabel.Name = "tENLabel";
+            tENLabel.Size = new System.Drawing.Size(32, 13);
+            tENLabel.TabIndex = 4;
+            tENLabel.Text = "TEN:";
+            // 
+            // dIACHILabel
+            // 
+            dIACHILabel.AutoSize = true;
+            dIACHILabel.Location = new System.Drawing.Point(61, 129);
+            dIACHILabel.Name = "dIACHILabel";
+            dIACHILabel.Size = new System.Drawing.Size(46, 13);
+            dIACHILabel.TabIndex = 6;
+            dIACHILabel.Text = "DIACHI:";
+            // 
+            // mAKHLabel
+            // 
+            mAKHLabel.AutoSize = true;
+            mAKHLabel.Location = new System.Drawing.Point(318, 40);
+            mAKHLabel.Name = "mAKHLabel";
+            mAKHLabel.Size = new System.Drawing.Size(41, 13);
+            mAKHLabel.TabIndex = 8;
+            mAKHLabel.Text = "MAKH:";
             // 
             // barManager1
             // 
@@ -202,6 +247,7 @@ namespace TN_CSDLPT.Views
             this.btnThoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThoat.ImageOptions.SvgImage")));
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -369,6 +415,46 @@ namespace TN_CSDLPT.Views
             this.groupBox.TabIndex = 33;
             this.groupBox.TabStop = false;
             // 
+            // txtMaKH
+            // 
+            this.txtMaKH.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "MAKH", true));
+            this.txtMaKH.Location = new System.Drawing.Point(365, 37);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(100, 20);
+            this.txtMaKH.TabIndex = 9;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "DIACHI", true));
+            this.txtDiaChi.Location = new System.Drawing.Point(113, 126);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(352, 20);
+            this.txtDiaChi.TabIndex = 7;
+            // 
+            // txtTen
+            // 
+            this.txtTen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "TEN", true));
+            this.txtTen.Location = new System.Drawing.Point(365, 81);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(100, 20);
+            this.txtTen.TabIndex = 5;
+            // 
+            // txtHo
+            // 
+            this.txtHo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "HO", true));
+            this.txtHo.Location = new System.Drawing.Point(113, 81);
+            this.txtHo.Name = "txtHo";
+            this.txtHo.Size = new System.Drawing.Size(100, 20);
+            this.txtHo.TabIndex = 3;
+            // 
+            // txtMaGV
+            // 
+            this.txtMaGV.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "MAGV", true));
+            this.txtMaGV.Location = new System.Drawing.Point(113, 34);
+            this.txtMaGV.Name = "txtMaGV";
+            this.txtMaGV.Size = new System.Drawing.Size(100, 20);
+            this.txtMaGV.TabIndex = 1;
+            // 
             // gIAOVIEN_DANGKYTableAdapter
             // 
             this.gIAOVIEN_DANGKYTableAdapter.ClearBeforeFill = true;
@@ -394,91 +480,6 @@ namespace TN_CSDLPT.Views
             this.tableAdapterManager.MONHOCTableAdapter = null;
             this.tableAdapterManager.SINHVIENTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = TN_CSDLPT.DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // mAGVLabel
-            // 
-            mAGVLabel.AutoSize = true;
-            mAGVLabel.Location = new System.Drawing.Point(66, 37);
-            mAGVLabel.Name = "mAGVLabel";
-            mAGVLabel.Size = new System.Drawing.Size(41, 13);
-            mAGVLabel.TabIndex = 0;
-            mAGVLabel.Text = "MAGV:";
-            // 
-            // txtMaGV
-            // 
-            this.txtMaGV.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "MAGV", true));
-            this.txtMaGV.Location = new System.Drawing.Point(113, 34);
-            this.txtMaGV.Name = "txtMaGV";
-            this.txtMaGV.Size = new System.Drawing.Size(100, 20);
-            this.txtMaGV.TabIndex = 1;
-            // 
-            // hOLabel
-            // 
-            hOLabel.AutoSize = true;
-            hOLabel.Location = new System.Drawing.Point(81, 84);
-            hOLabel.Name = "hOLabel";
-            hOLabel.Size = new System.Drawing.Size(26, 13);
-            hOLabel.TabIndex = 2;
-            hOLabel.Text = "HO:";
-            // 
-            // txtHo
-            // 
-            this.txtHo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "HO", true));
-            this.txtHo.Location = new System.Drawing.Point(113, 81);
-            this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(100, 20);
-            this.txtHo.TabIndex = 3;
-            // 
-            // tENLabel
-            // 
-            tENLabel.AutoSize = true;
-            tENLabel.Location = new System.Drawing.Point(327, 84);
-            tENLabel.Name = "tENLabel";
-            tENLabel.Size = new System.Drawing.Size(32, 13);
-            tENLabel.TabIndex = 4;
-            tENLabel.Text = "TEN:";
-            // 
-            // txtTen
-            // 
-            this.txtTen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "TEN", true));
-            this.txtTen.Location = new System.Drawing.Point(365, 81);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(100, 20);
-            this.txtTen.TabIndex = 5;
-            // 
-            // dIACHILabel
-            // 
-            dIACHILabel.AutoSize = true;
-            dIACHILabel.Location = new System.Drawing.Point(61, 129);
-            dIACHILabel.Name = "dIACHILabel";
-            dIACHILabel.Size = new System.Drawing.Size(46, 13);
-            dIACHILabel.TabIndex = 6;
-            dIACHILabel.Text = "DIACHI:";
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "DIACHI", true));
-            this.txtDiaChi.Location = new System.Drawing.Point(113, 126);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(352, 20);
-            this.txtDiaChi.TabIndex = 7;
-            // 
-            // mAKHLabel
-            // 
-            mAKHLabel.AutoSize = true;
-            mAKHLabel.Location = new System.Drawing.Point(318, 40);
-            mAKHLabel.Name = "mAKHLabel";
-            mAKHLabel.Size = new System.Drawing.Size(41, 13);
-            mAKHLabel.TabIndex = 8;
-            mAKHLabel.Text = "MAKH:";
-            // 
-            // txtMaKH
-            // 
-            this.txtMaKH.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGiaoVien, "MAKH", true));
-            this.txtMaKH.Location = new System.Drawing.Point(365, 37);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(100, 20);
-            this.txtMaKH.TabIndex = 9;
             // 
             // FromGiangVien
             // 

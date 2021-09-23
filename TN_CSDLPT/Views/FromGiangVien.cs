@@ -129,7 +129,7 @@ namespace TN_CSDLPT.Views
 
         private void btnDelete_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            String magv = "";
+            string magv = "";
             MessageBox.Show(bdsBoDe.Count+"","");
             if (bdsBoDe.Count > 0)
             {
@@ -148,7 +148,7 @@ namespace TN_CSDLPT.Views
                 try
                 {
                     //giữ lại để nếu xóa lỗi thì phục hồi lại tại vị trí đó
-                    magv = ((DataRowView)bdsGiaoVien[0])["MAGV"].ToString();
+                    magv = ((DataRowView)bdsGiaoVien[bdsGiaoVien.Position])["MAGV"].ToString();
                     bdsGiaoVien.RemoveCurrent(); //xóa ở trong bảng hiện tại
 
                     //Cập nhật lại cơ sở dữ liệu trên DB
@@ -227,6 +227,11 @@ namespace TN_CSDLPT.Views
             btnGhi.Enabled = btnUndo.Enabled = false;
 
             groupBox.Enabled = false;
+        }
+
+        private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
         }
     }
 }
