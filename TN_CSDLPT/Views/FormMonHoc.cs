@@ -49,6 +49,7 @@ namespace TN_CSDLPT.Views
             // nhóm CoSo thì ta chỉ cho phép toàn quyền làm việc trên cơ sở  đó , không được log vào cơ sở  khác,   
             if (Program.mGroup == "COSO")
             {
+                
                 //btnRedo.Visibility = btnHuy.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
                 //btnThemMH.Visibility = btnSuaMH.Visibility = btnGhiMH.Visibility = btnXoaMH.Visibility = btnPhucHoiMH.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
             }
@@ -226,7 +227,7 @@ namespace TN_CSDLPT.Views
             //và gán vị trí dòng sẽ bằng vị trí trước khi thêm
             if (btnThem.Enabled == false) bdsMonHoc.Position = vitri;
             gcMonHoc.Enabled = true;
-            panelControl.Enabled = true;
+            panelControl.Enabled = false;
             btnThem.Enabled = btnHieuChinh.Enabled = btnXoa.Enabled = btnReload.Enabled = btnThoat.Enabled = true;
             btnGhi.Enabled = btnUndo.Enabled = false;
         }

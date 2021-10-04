@@ -33,14 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v20.1" />
-    <Reference Include="DevExpress.Data.Desktop.v20.1" />
-    <Reference Include="DevExpress.Data.v20.1" />
-    <Reference Include="DevExpress.Printing.v20.1.Core" />
-    <Reference Include="DevExpress.Utils.v20.1" />
-    <Reference Include="DevExpress.XtraBars.v20.1" />
-    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
-    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.BonusSkins.v21.1" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1" />
+    <Reference Include="DevExpress.Data.v21.1" />
+    <Reference Include="DevExpress.Printing.v21.1.Core" />
+    <Reference Include="DevExpress.Utils.v21.1" />
+    <Reference Include="DevExpress.XtraBars.v21.1" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v21.1" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +56,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormKhoa.Designer.cs">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormKhoaLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormKhoaLop.Designer.cs">
+      <DependentUpon>FormKhoaLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\formMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +87,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FormMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormMonHoc.Designer.cs">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormSinhVien.Designer.cs">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FromGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FromGiangVien.Designer.cs">
+      <DependentUpon>FromGiangVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FormKhoa.resx">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormKhoaLop.resx">
+      <DependentUpon>FormKhoaLop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,7 +127,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FormMonHoc.resx">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormSinhVien.resx">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FromGiangVien.resx">
+      <DependentUpon>FromGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

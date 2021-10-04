@@ -15,5 +15,16 @@
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
+    <TableUISetting Name="SINHVIEN">
+      <ColumnUISettings>
+        <ColumnUISetting Name="NGAYSINH">
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="DateEdit" Type="DevExpress.XtraEditors.DateEdit" AssemblyName="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Frameworks=".NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.7.2" />
+            </ControlSetting>
+          </ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
   </TableUISettings>
 </DataSetUISetting>

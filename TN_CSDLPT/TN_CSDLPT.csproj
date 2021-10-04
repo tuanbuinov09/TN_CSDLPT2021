@@ -41,9 +41,9 @@
     <Reference Include="DevExpress.XtraBars.v21.1" />
     <Reference Include="DevExpress.Sparkline.v21.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v21.1" />
-    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +60,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormKhoa.Designer.cs">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormKhoaLop.cs">
       <SubType>Form</SubType>
@@ -87,12 +93,21 @@
     <Compile Include="Views\FormMonHoc.Designer.cs">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FormSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormSinhVien.Designer.cs">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FromGiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FromGiangVien.Designer.cs">
       <DependentUpon>FromGiangVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FormKhoa.resx">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormKhoaLop.resx">
       <DependentUpon>FormKhoaLop.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="Views\FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormSinhVien.resx">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FromGiangVien.resx">
       <DependentUpon>FromGiangVien.cs</DependentUpon>

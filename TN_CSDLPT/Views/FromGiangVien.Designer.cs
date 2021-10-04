@@ -51,9 +51,6 @@ namespace TN_CSDLPT.Views
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar2 = new DevExpress.XtraBars.Bar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cbxCoSo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gcGiaoVien = new DevExpress.XtraGrid.GridControl();
             this.bdsGiaoVien = new System.Windows.Forms.BindingSource(this.components);
@@ -76,13 +73,15 @@ namespace TN_CSDLPT.Views
             this.bODETableAdapter = new TN_CSDLPT.DSTableAdapters.BODETableAdapter();
             this.giaovienTableAdapter = new TN_CSDLPT.DSTableAdapters.GIAOVIENTableAdapter();
             this.tableAdapterManager = new TN_CSDLPT.DSTableAdapters.TableAdapterManager();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxCoSo = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             mAGVLabel = new System.Windows.Forms.Label();
             hOLabel = new System.Windows.Forms.Label();
             tENLabel = new System.Windows.Forms.Label();
             dIACHILabel = new System.Windows.Forms.Label();
             mAKHLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcGiaoVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGiaoVien)).BeginInit();
@@ -91,52 +90,53 @@ namespace TN_CSDLPT.Views
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGiaoVien_DangKy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBoDe)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mAGVLabel
             // 
             mAGVLabel.AutoSize = true;
-            mAGVLabel.Location = new System.Drawing.Point(66, 37);
+            mAGVLabel.Location = new System.Drawing.Point(33, 37);
             mAGVLabel.Name = "mAGVLabel";
-            mAGVLabel.Size = new System.Drawing.Size(41, 13);
+            mAGVLabel.Size = new System.Drawing.Size(74, 13);
             mAGVLabel.TabIndex = 0;
-            mAGVLabel.Text = "MAGV:";
+            mAGVLabel.Text = "Mã Giáo Viên:";
             // 
             // hOLabel
             // 
             hOLabel.AutoSize = true;
             hOLabel.Location = new System.Drawing.Point(81, 84);
             hOLabel.Name = "hOLabel";
-            hOLabel.Size = new System.Drawing.Size(26, 13);
+            hOLabel.Size = new System.Drawing.Size(24, 13);
             hOLabel.TabIndex = 2;
-            hOLabel.Text = "HO:";
+            hOLabel.Text = "Họ:";
             // 
             // tENLabel
             // 
             tENLabel.AutoSize = true;
             tENLabel.Location = new System.Drawing.Point(327, 84);
             tENLabel.Name = "tENLabel";
-            tENLabel.Size = new System.Drawing.Size(32, 13);
+            tENLabel.Size = new System.Drawing.Size(29, 13);
             tENLabel.TabIndex = 4;
-            tENLabel.Text = "TEN:";
+            tENLabel.Text = "Tên:";
             // 
             // dIACHILabel
             // 
             dIACHILabel.AutoSize = true;
             dIACHILabel.Location = new System.Drawing.Point(61, 129);
             dIACHILabel.Name = "dIACHILabel";
-            dIACHILabel.Size = new System.Drawing.Size(46, 13);
+            dIACHILabel.Size = new System.Drawing.Size(44, 13);
             dIACHILabel.TabIndex = 6;
-            dIACHILabel.Text = "DIACHI:";
+            dIACHILabel.Text = "Địa Chỉ:";
             // 
             // mAKHLabel
             // 
             mAKHLabel.AutoSize = true;
-            mAKHLabel.Location = new System.Drawing.Point(318, 40);
+            mAKHLabel.Location = new System.Drawing.Point(306, 40);
             mAKHLabel.Name = "mAKHLabel";
-            mAKHLabel.Size = new System.Drawing.Size(41, 13);
+            mAKHLabel.Size = new System.Drawing.Size(53, 13);
             mAKHLabel.TabIndex = 8;
-            mAKHLabel.Text = "MAKH:";
+            mAKHLabel.Text = "Mã Khoa:";
             // 
             // barManager1
             // 
@@ -261,7 +261,7 @@ namespace TN_CSDLPT.Views
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 590);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 514);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(922, 0);
             // 
@@ -271,7 +271,7 @@ namespace TN_CSDLPT.Views
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 566);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 490);
             // 
             // barDockControlRight
             // 
@@ -279,7 +279,7 @@ namespace TN_CSDLPT.Views
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(922, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 566);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 490);
             // 
             // bar2
             // 
@@ -291,33 +291,6 @@ namespace TN_CSDLPT.Views
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.cbxCoSo);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(922, 50);
-            this.panel1.TabIndex = 4;
-            // 
-            // cbxCoSo
-            // 
-            this.cbxCoSo.FormattingEnabled = true;
-            this.cbxCoSo.Location = new System.Drawing.Point(140, 16);
-            this.cbxCoSo.Name = "cbxCoSo";
-            this.cbxCoSo.Size = new System.Drawing.Size(243, 21);
-            this.cbxCoSo.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cơ sở";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.gcGiaoVien);
@@ -325,7 +298,7 @@ namespace TN_CSDLPT.Views
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 74);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(922, 516);
+            this.panel2.Size = new System.Drawing.Size(922, 440);
             this.panel2.TabIndex = 5;
             // 
             // gcGiaoVien
@@ -481,11 +454,38 @@ namespace TN_CSDLPT.Views
             this.tableAdapterManager.SINHVIENTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = TN_CSDLPT.DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(83, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cơ sở";
+            // 
+            // cbxCoSo
+            // 
+            this.cbxCoSo.FormattingEnabled = true;
+            this.cbxCoSo.Location = new System.Drawing.Point(140, 16);
+            this.cbxCoSo.Name = "cbxCoSo";
+            this.cbxCoSo.Size = new System.Drawing.Size(243, 21);
+            this.cbxCoSo.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cbxCoSo);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(922, 50);
+            this.panel1.TabIndex = 4;
+            // 
             // FromGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 590);
+            this.ClientSize = new System.Drawing.Size(922, 514);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
@@ -496,8 +496,6 @@ namespace TN_CSDLPT.Views
             this.Text = "Giảng Viên";
             this.Load += new System.EventHandler(this.FromGiangVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcGiaoVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGiaoVien)).EndInit();
@@ -507,6 +505,8 @@ namespace TN_CSDLPT.Views
             this.groupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGiaoVien_DangKy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBoDe)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,10 +525,7 @@ namespace TN_CSDLPT.Views
         private DevExpress.XtraBars.BarButtonItem btnUndo;
         private DevExpress.XtraBars.BarButtonItem btnGhi;
         private DevExpress.XtraBars.Bar bar2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbxCoSo;
         private DevExpress.XtraBars.BarButtonItem btnHieuChinh;
         private DevExpress.XtraBars.BarButtonItem btnReload;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
@@ -554,5 +551,8 @@ namespace TN_CSDLPT.Views
         private System.Windows.Forms.TextBox txtMaGV;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cbxCoSo;
+        private System.Windows.Forms.Label label1;
     }
 }

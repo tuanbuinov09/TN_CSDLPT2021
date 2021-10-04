@@ -65,13 +65,25 @@ namespace TN_CSDLPT
             }
         }
 
-        private void btnMonHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnFormMonHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Form frm = this.CheckExists(typeof(FormMonHoc));
             if (frm != null) frm.Activate();
             else
             {
                 FormMonHoc f = new FormMonHoc();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnKhoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormKhoa));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormKhoa f = new FormKhoa();
                 f.MdiParent = this;
                 f.Show();
             }

@@ -37,6 +37,7 @@ namespace TN_CSDLPT.Views
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
             this.btnHieuChinh = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnUndo = new DevExpress.XtraBars.BarButtonItem();
@@ -64,7 +65,6 @@ namespace TN_CSDLPT.Views
             this.bdsGiaoVien_DangKy = new System.Windows.Forms.BindingSource(this.components);
             this.bdsBoDe = new System.Windows.Forms.BindingSource(this.components);
             this.bdsBangDiem = new System.Windows.Forms.BindingSource(this.components);
-            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             mAMHLabel = new System.Windows.Forms.Label();
             tENMHLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -157,6 +157,15 @@ namespace TN_CSDLPT.Views
             this.btnHieuChinh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnHieuChinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHieuChinh_ItemClick);
             // 
+            // btnHuy
+            // 
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 8;
+            this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
+            // 
             // btnGhi
             // 
             this.btnGhi.Caption = "Ghi";
@@ -188,14 +197,18 @@ namespace TN_CSDLPT.Views
             // 
             this.btnReload.Caption = "Reload";
             this.btnReload.Id = 5;
+            this.btnReload.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnReload.ImageOptions.SvgImage")));
             this.btnReload.Name = "btnReload";
+            this.btnReload.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnReload.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReload_ItemClick);
             // 
             // btnIn
             // 
             this.btnIn.Caption = "In danh sách";
             this.btnIn.Id = 6;
+            this.btnIn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnIn.ImageOptions.SvgImage")));
             this.btnIn.Name = "btnIn";
+            this.btnIn.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // btnThoat
             // 
@@ -211,7 +224,7 @@ namespace TN_CSDLPT.Views
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1019, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(859, 24);
             // 
             // barDockControlBottom
             // 
@@ -219,7 +232,7 @@ namespace TN_CSDLPT.Views
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 450);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1019, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(859, 0);
             // 
             // barDockControlLeft
             // 
@@ -233,7 +246,7 @@ namespace TN_CSDLPT.Views
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1019, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(859, 24);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 426);
             // 
@@ -284,7 +297,7 @@ namespace TN_CSDLPT.Views
             this.gcMonHoc.MainView = this.gridView1;
             this.gcMonHoc.MenuManager = this.barManager1;
             this.gcMonHoc.Name = "gcMonHoc";
-            this.gcMonHoc.Size = new System.Drawing.Size(999, 217);
+            this.gcMonHoc.Size = new System.Drawing.Size(856, 217);
             this.gcMonHoc.TabIndex = 5;
             this.gcMonHoc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -353,20 +366,11 @@ namespace TN_CSDLPT.Views
             this.bdsBangDiem.DataMember = "FK_BANGDIEM_MONHOC";
             this.bdsBangDiem.DataSource = this.bdsMonHoc;
             // 
-            // btnHuy
-            // 
-            this.btnHuy.Caption = "Hủy";
-            this.btnHuy.Id = 8;
-            this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
-            // 
             // FormMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 450);
+            this.ClientSize = new System.Drawing.Size(859, 450);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.gcMonHoc);
             this.Controls.Add(this.barDockControlLeft);
@@ -374,7 +378,7 @@ namespace TN_CSDLPT.Views
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "FormMonHoc";
-            this.Text = "FormMonHoc";
+            this.Text = "Môn Học";
             this.Load += new System.EventHandler(this.FormMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DS)).EndInit();
